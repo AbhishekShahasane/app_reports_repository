@@ -1,3 +1,5 @@
+
+
 from flask import Flask
 from flask_restful import Api
 from resources.krupasindhu import krupasindhuData
@@ -8,4 +10,4 @@ api = Api(app)
 api.add_resource(krupasindhuData, '/krupasindhu')
 
 if __name__ == "__main__":
-    app.run(host='192.168.0.107', port=5001, debug=True)
+    app.run(port=5001, debug=True)
